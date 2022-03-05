@@ -46,15 +46,17 @@ main {
   right: 0;
   z-index: 2;
 
-  #cardMain {
+  .card {
     width: 730px;
-    height: 297px;
+    padding: 48px;
     border: 2px solid rgba(0, 0, 0, 0.0497);
     border-radius: 8px;
     background-color: #fff;
     position: relative;
     margin-bottom: 21px;
+  }
 
+  #cardMain {
     h1 {
       text-align: center;
       font-size: 28px;
@@ -128,18 +130,6 @@ main {
       height: 56px;
       background-image: url("../images/logo-mastercraft.svg");
     }
-  }
-
-  section {
-    border: 2px solid #f6f6f6;
-    border-radius: 10px;
-    background-color: #fff;
-    padding: 0 47px;
-  }
-
-  section:first-child {
-    padding-top: 64px;
-    padding-bottom: 47px;
   }
 }
 
