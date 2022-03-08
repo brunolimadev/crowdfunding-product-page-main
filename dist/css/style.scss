@@ -24,7 +24,7 @@
         list-style: none;
 
         li {
-          margin-left: 34px;
+          margin-left: 2.125rem;
 
           a {
             text-decoration: none;
@@ -46,28 +46,91 @@ main {
   right: 0;
   z-index: 2;
 
-  .card {
+  .box {
     width: 730px;
-    padding: 48px;
+    padding: 3rem;
     border: 2px solid rgba(0, 0, 0, 0.0497);
     border-radius: 8px;
     background-color: #fff;
     position: relative;
-    margin-bottom: 21px;
+
+    & + .box {
+      margin: 1.375rem 0;
+    }
+
+    &__indicators {
+      display: flex;
+      margin-bottom: 2.313rem;
+
+      & > div {
+        flex: 1;
+
+        & + div {
+          padding-left: 3rem;
+          border-left: 1px solid rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+          font-size: 2rem;
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          font-size: 0.9375rem;
+          color: #7a7a7a;
+        }
+      }
+    }
+
+    &__progress-bar {
+      width: 100%;
+      height: 12px;
+      border-radius: 33.5px;
+      background-image: linear-gradient(
+        to right,
+        #3cb3ab 80%,
+        rgba(47, 47, 47, 0.05) 20%
+      );
+    }
+
+    & > h3 {
+      margin-bottom: 2.188rem;
+    }
+
+    & > p {
+      font-size: 1rem;
+      color: #7a7a7a;
+      line-height: 1.875rem;
+      margin-bottom: 2.5rem;
+    }
+
+    &__card {
+      padding: 2rem;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+
+      & + .box__card {
+        margin-top: 1.5rem;
+      }
+    }
+
+    &__card--inactive {
+      opacity: 0.5;
+    }
   }
 
-  #cardMain {
+  #mainBox {
     h1 {
       text-align: center;
-      font-size: 28px;
-      margin-bottom: 15px;
+      font-size: 1.75rem;
+      margin-bottom: 0.9375rem;
     }
 
     p {
       text-align: center;
       font-size: 1rem;
       color: #7a7a7a;
-      margin-bottom: 40px;
+      margin-bottom: 2.5rem;
     }
 
     & > div {
@@ -97,7 +160,7 @@ main {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-right: 23.5px;
+        padding-right: 1.469rem;
 
         & > span {
           font-weight: bold;

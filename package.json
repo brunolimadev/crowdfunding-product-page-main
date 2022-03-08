@@ -1,0 +1,27 @@
+{
+  "name": "crowdfunding-product-page-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Crowdfunding product page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npx sass --watch dist/css/style.scss:dist/css/style.css\" \"lite-server -c config/bs-config.json\"  \"npm run watch\" ",
+    "compile": "tsc",
+    "watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunolimadev/crowdfunding-product-page-main.git"
+  },
+  "author": "Bruno Lima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunolimadev/crowdfunding-product-page-main/issues"
+  },
+  "homepage": "https://github.com/brunolimadev/crowdfunding-product-page-main#readme",
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "lite-server": "^2.6.1",
+    "typescript": "^4.6.2"
+  }
+}
